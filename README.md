@@ -16,3 +16,13 @@ Considere que tiene una clase llamada "Tank" que representa a un tanque Terran e
 - TankState: la interfaz que define los métodos comunes que deben implementar los estados concretos.
 - TankModeTankState: una clase que implementa la interfaz TankState y representa el estado "Modo Tanque" del tanque. Debe proporcionar implementaciones para los métodos específicos de este estado, como moverse() y atacar().
 - TankModeSiegeState: una clase que implementa la interfaz TankState y representa el estado "Modo Asedio" del tanque. Debe proporcionar implementaciones para los métodos específicos de este estado, como moverse() y atacar().
+
+## Ejercicio 03: Iterator
+Implemente una clase para representar un `ArbolBinario`. La misma debe implementar la interfaz `Iterable<T>`, que provea un iterador que la recorra In Order (Hi, R, Hd)
+
+## Ejercicio 04: Adapter
+Se está desarrollando una aplicación que integra varios servicios de envío de mensajes, como correo electrónico, SMS y mensajes push. Cada servicio tiene su propia interfaz de envío de mensajes, pero la aplicación requiere una interfaz unificada para enviar mensajes a los destinatarios.
+
+La tarea consiste en implementar un Adapter para integrar estos servicios de envío de mensajes. Se deben crear adaptadores para cada servicio de mensajería (correo electrónico, SMS, mensajes push) que implementen una interfaz común de envío de mensajes. Luego, se debe crear un cliente que utilice estos adaptadores para enviar mensajes a diferentes destinatarios de manera transparente, sin necesidad de conocer los detalles específicos de cada servicio de mensajería.
+
+Se debe asegurar que permite integrar servicios con interfaces incompatibles y proporciona una interfaz unificada para interactuar con ellos.
