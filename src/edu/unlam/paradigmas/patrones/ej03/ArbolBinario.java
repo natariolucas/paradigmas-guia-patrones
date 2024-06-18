@@ -38,8 +38,7 @@ public class ArbolBinario<T> implements Iterable<T>{
 
 	@Override
 	public Iterator<T> iterator() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ArbolBinarioEnOrden<T>(this);
 	}
 	
 

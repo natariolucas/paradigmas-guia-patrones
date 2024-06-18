@@ -16,13 +16,8 @@ public class App {
 		
 		arbol.setHojaDerecha(arbolDer);
 		
-		ArbolBinarioEnOrden<Integer> iterador = new ArbolBinarioEnOrden<Integer>(arbol);
-		while(iterador.hasNext()) {
-			System.out.print(iterador.next());
-			
-			if (iterador.hasNext()) {
-				System.out.print(",");
-			}
+		for(Integer nodo : arbol) {
+			System.out.println("Nodo: " + nodo);
 		}
 	}
 
